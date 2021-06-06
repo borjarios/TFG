@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabs.admin.libraries.AddLibraryActivity">
+
+    <ImageView
+        android:id="@+id/ImageViewLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/library128px" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextDirection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_direction"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_tel"
+                android:inputType="number"
+                android:maxLength="9" />
+
+            <EditText
+                android:id="@+id/EditTextSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_schedule"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_location"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextLatitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_latitude"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextLongitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_libraries_longitude"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/ButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:onClick="addLibrary"
+                android:drawableLeft="@drawable/ic_control_add"
+                android:text="@string/title_libraries_add" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

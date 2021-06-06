@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabs.admin.books.AddBookActivity">
+
+    <ImageView
+        android:id="@+id/ImageViewBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/book" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EditTextISBN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_isbn"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_title"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_author"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextEditorial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_gender"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextIdiom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_editorial"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_idiom"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/EditTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/title_books_description"
+                android:inputType="text|textMultiLine"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/EditTextPages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"
+                android:hint="@string/title_books_pages"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/SpinnerLibrary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/ButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:onClick="addBook"
+                android:drawableLeft="@drawable/ic_control_add"
+                android:text="@string/title_books_add" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "858976251155",
+    "firebase_url": "https://pruebanueva-2f8c7-default-rtdb.firebaseio.com",
+    "project_id": "pruebanueva-2f8c7",
+    "storage_bucket": "pruebanueva-2f8c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858976251155:android:b7fdfd1a009d90f26d3ee6",
+        "android_client_info": {
+          "package_name": "com.borido.tfg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858976251155-pdkj3137rdb44hvm0v1h42dkls01ev9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaPTpPwTNiCRnklM4KUgAXWBr_xKPfXxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858976251155-pdkj3137rdb44hvm0v1h42dkls01ev9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

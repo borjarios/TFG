@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tabs.admin.libraries.ControlLibraryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ImageViewLibrary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    app:srcCompat="@drawable/library128px" />
+
+                <EditText
+                    android:id="@+id/EditTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_name"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/EditTextDirection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_direction"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/EditTextTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_tel"
+                    android:inputType="number"
+                    android:visibility="invisible"
+                    android:maxLength="9" />
+
+                <EditText
+                    android:id="@+id/EditTextSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_schedule"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/EditTextLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_location"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/EditTextLatitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_latitude"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/EditTextLongitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:hint="@string/title_libraries_longitude"
+                    android:visibility="invisible"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ButtonEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="editLibrary"
+                        android:drawableLeft="@drawable/ic_edit_white"
+                        android:visibility="invisible"
+                        android:text="@string/title_libraries_edit" />
+
+                    <Button
+                        android:id="@+id/ButtonRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:onClick="removeLibrary"
+                        android:drawableLeft="@drawable/ic_delete_white"
+                        android:visibility="invisible"
+                        android:text="@string/title_libraries_remove" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+    android:id="@+id/ProgressBar"
+    style="@style/progressBarColor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:indeterminate="true"
+    android:indeterminateTint="@color/primary"
+    android:indeterminateTintMode="src_atop" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

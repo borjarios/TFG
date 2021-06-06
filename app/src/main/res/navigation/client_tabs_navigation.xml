@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.borido.tfg.tabs.client.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/client_tabs_fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_reserves"
+        android:name="com.borido.tfg.tabs.client.reserves.ReservesFragment"
+        android:label="@string/title_reserves"
+        tools:layout="@layout/client_tabs_fragment_reserves" />
+
+    <fragment
+        android:id="@+id/navigation_libraries"
+        android:name="com.borido.tfg.tabs.client.libraries.LibrariesFragment"
+        android:label="@string/title_libraries"
+        tools:layout="@layout/client_tabs_fragment_libraries" />
+</navigation>

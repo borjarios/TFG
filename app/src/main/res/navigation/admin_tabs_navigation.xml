@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@+id/navigation_control_books">
+
+    <fragment
+        android:id="@+id/navigation_control_books"
+        android:name="com.borido.tfg.tabs.admin.books.BooksFragment"
+        android:label="@string/title_control_books"
+        tools:layout="@layout/admin_tabs_fragment_books" />
+
+    <fragment
+        android:id="@+id/navigation_control_libraries"
+        android:name="com.borido.tfg.tabs.admin.libraries.LibrariesFragment"
+        android:label="@string/title_control_libraries"
+        tools:layout="@layout/admin_tabs_fragment_libraries" />
+
+    <fragment
+        android:id="@+id/navigation_control_profiles"
+        android:name="com.borido.tfg.tabs.admin.profiles.ProfilesFragment"
+        android:label="@string/title_control_profiles"
+        tools:layout="@layout/admin_tabs_fragment_profiles" />
+</navigation>

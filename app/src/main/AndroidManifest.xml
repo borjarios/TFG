@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.borido.tfg">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.TFG">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".tabs.client.libraries.ListBookActivity"
+            android:label="@string/title_activity_list_books"
+            android:theme="@style/Theme.TFG"/>
+        <activity
+            android:name=".tabs.client.search.BookDetailActivity"
+            android:label="@string/title_activity_detail_book"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.books.ControlBookActivity"
+            android:label="@string/title_activity_control_book"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.books.AddBookActivity"
+            android:label="@string/title_activity_add_book"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.profiles.ControlProfileActivity"
+            android:label="@string/title_activity_control_profile"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.client.libraries.LibraryDetailActivity"
+            android:label="@string/title_activity_detail_library"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.libraries.AddLibraryActivity"
+            android:label="@string/title_activity_add_library"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.libraries.ControlLibraryActivity"
+            android:label="@string/title_activity_control_library"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.TFG" />
+        <activity
+            android:name=".tabs.admin.TabsAdmin"
+            android:label="@string/title_activity_tabs_admin"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar" />
+        <activity
+            android:name=".tabs.client.TabsClient"
+            android:label="@string/title_activity_main"
+            android:theme="@style/MaterialDrawerTheme.Light.DarkToolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

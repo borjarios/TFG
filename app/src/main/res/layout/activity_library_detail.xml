@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".tabs.client.libraries.LibraryDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ImageViewLibrary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/library128px" />
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:hint="@string/title_libraries_name"
+            android:visibility="invisible"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditTextDirectionLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:hint="@string/title_libraries_direction"
+            android:visibility="invisible"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/EditTextTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:hint="@string/title_libraries_tel"
+            android:inputType="number"
+            android:visibility="invisible"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:maxLength="9" />
+
+        <EditText
+            android:id="@+id/EditTextSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:selectAllOnFocus="true"
+            android:hint="@string/title_libraries_schedule"
+            android:visibility="invisible"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/ButtonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_eye_white"
+            android:text="@string/title_view_books"
+            android:onClick="view"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+<ProgressBar
+    android:id="@+id/ProgressBar"
+    style="@style/progressBarColor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:indeterminate="true"
+    android:indeterminateTint="@color/primary"
+    android:indeterminateTintMode="src_atop" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#50edc0</color>
+    <color name="secondary">#84f1c6</color>
+    <color name="tertiary">#84f1f1</color>
+    <color name="quaternary">#84def1</color>
+    <color name="quinary">#50d8db</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

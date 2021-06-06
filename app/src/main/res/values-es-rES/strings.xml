@@ -1,0 +1,182 @@
+<resources>
+    /* ------------------------------------------------ INFO APP ------------------------------------------------ */
+
+    <string name="app_name">BibliTorrent</string>
+
+    /* ------------------------------------------------ TITLES ACTIVITYS ------------------------------------------------ */
+
+    <string name="title_activity_main">BibliTorrent</string>
+    <string name="title_activity_tabs_admin">Admin</string>
+    <string name="title_activity_tabs_client">Cliente</string>
+    <string name="title_activity_login">Inicio de sesión</string>
+    <string name="title_activity_register">Registro</string>
+    <string name="title_activity_profile">Perfil</string>
+    <string name="title_activity_settings">Opciones</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_add_library">Añadir biblioteca</string>
+    <string name="title_activity_detail_library">Info. biblioteca</string>
+    <string name="title_activity_detail_book">Info. libro</string>
+    <string name="title_activity_list_books">Lista de libros</string>
+    <string name="title_activity_control_library">Editar biblioteca</string>
+    <string name="title_activity_add_book">Añadir libro</string>
+    <string name="title_activity_control_book">Editar libro</string>
+    <string name="title_activity_add_profile">Añadir usuario</string>
+    <string name="title_activity_control_profile">Editar usuario</string>
+
+    /* ------------------------------------------------ TITLES BUTTOM (TABS CLIENT) ------------------------------------------------ */
+
+    <string name="title_search">Busqueda</string>
+    <string name="title_reserves">Reservas</string>
+    <string name="title_libraries">Bibliotecas</string>
+
+    /* ------------------------------------------------ TITLES BUTTOM (TABS ADMIN) ------------------------------------------------ */
+
+    <string name="title_control_books">Libros</string>
+    <string name="title_control_libraries">Bibliotecas</string>
+    <string name="title_control_profiles">Usuarios</string>
+
+    /* ------------------------------------------------ MENU (EXIT/LOGOUT) ------------------------------------------------ */
+
+    <string name="title_exit">Salir</string>
+    <string name="title_QRScanner">QRScanner</string>
+
+    /* ------------------------------------------------ ALERT DIALOG (EXIT) ------------------------------------------------ */
+
+    <string name="title_alert_dialog_exit">Salir</string>
+    <string name="message_alert_dialog_exit">¿Está seguro de que desea salir de la aplicación?</string>
+    <string name="positive_button_alert_dialog_exit">Sí</string>
+    <string name="negative_button_alert_dialog_exit">No</string>
+
+    /* ------------------------------------------------ ALERT DIALOG (LOGOUT) ------------------------------------------------ */
+
+    <string name="title_alert_dialog_logout">Log Out</string>
+    <string name="message_alert_dialog_logout">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="positive_button_alert_dialog_logout">Sí</string>
+    <string name="negative_button_alert_dialog_logout">No</string>
+
+    /* ------------------------------------------------ LOGIN / REGISTER ------------------------------------------------ */
+
+    <string name="prompt_user">Nombre</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_forgot_password">¿Se te olvidó tu contraseña?</string>
+    <string name="toast_verify_account">Antes debes verificar tu cuenta</string>
+    <string name="action_sign_in">Registrarse</string>
+    <string name="action_log_in">Iniciar sesión</string>
+    <string name="action_terms">Aceptar terminos y condiciones</string>
+    <string name="action_admin">Administrador</string>
+    <string name="title_progress_dialog_register">Registrarse</string>
+    <string name="message_progress_dialog_register">Espere por favor...</string>
+    <string name="error_field_login">Este campo es obligatorio</string>
+    <string name="toast_register_users">Usuario registrado exitosamente</string>
+    <string name="toast_login_users">El usuario inició sesión correctamente</string>
+    <string name="toast_logout_users">El usuario se desconectó correctamente</string>
+    <string name="toast_fogot_password_users">Revise su correo electrónico para poder restablecer la contraseña</string>
+    <string name="toast_sign_out">El usuario se desconectó correctamente</string>
+
+    /* ------------------------------------------------ MATERIAL DRAWER ------------------------------------------------ */
+
+    <string name="section_library">Biblioteca</string>
+    <string name="section_administration">Manteminiento</string>
+    <string name="section_profile">Perfil</string>
+    <string name="section_settings">Ajustes</string>
+    <string name="section_logout">Cerrar sesión</string>
+    <string name="title_progress_dialog_tabs">Actualizando datos</string>
+    <string name="message_progress_dialog_tabs">Espere por favor...</string>
+
+    /* ------------------------------------------------ TITLES CONTROL/ADD LIBRARIES ------------------------------------------------ */
+
+    <string name="title_libraries_name">Name</string>
+    <string name="title_libraries_tel">Tef.</string>
+    <string name="title_libraries_direction">Dirección</string>
+    <string name="title_libraries_location">Localidad</string>
+    <string name="title_libraries_schedule">Horario</string>
+    <string name="title_libraries_latitude">Latitud</string>
+    <string name="title_libraries_longitude">Longitud</string>
+    <string name="title_libraries_add">Añadir</string>
+    <string name="title_libraries_edit">Editar</string>
+    <string name="title_libraries_remove">Eliminar</string>
+    <string name="title_view_books">Libros</string>
+    <string name="error_libraries">Este campo es obligatorio</string>
+    <string name="toast_add_libraries">Biblioteca agregada correctamente</string>
+    <string name="toast_edit_libraries">Biblioteca correctamente editada</string>
+    <string name="toast_remove_libraries">Biblioteca eliminada correctamente</string>
+    <string name="toast_error_fields_libraries">Hay campos que son obligatorios</string>
+    <string name="toast_error_field_libraries">Este campo es obligatorio</string>
+    <string name="title_alert_dialog_edit_libraries">Editar biblioteca</string>
+    <string name="message_alert_dialog_edit_libraries">¿Estás seguro de que quieres guardar los cambios?</string>
+    <string name="title_alert_dialog_remove_libraries">Eliminar biblioteca</string>
+    <string name="message_alert_dialog_remove_libraries">¿Estás seguro de que deseas eliminar la biblioteca?</string>
+
+    /* ------------------------------------------------ TITLES SEARCH BAR ------------------------------------------------ */
+
+    <string name="title_search_bar_book">ISBN, titulo, autor, genero, editorial</string>
+    <string name="title_search_bar_libraries">Nombre, localidad, dirección, tel</string>
+    <string name="title_search_bar_profile">Correo, nombre</string>
+
+    /* ------------------------------------------------ TITLES CONTROL/ADD BOOKS ------------------------------------------------ */
+
+    <string name="title_books_isbn">ISBN</string>
+    <string name="title_books_title">Titulo</string>
+    <string name="title_books_author">Autor</string>
+    <string name="title_books_gender">Género</string>
+    <string name="title_books_editorial">Editorial</string>
+    <string name="title_books_idiom">Idioma</string>
+    <string name="title_books_description">Descripción</string>
+    <string name="title_books_pages">Nº páginas</string>
+    <string name="title_books_libraries">Bibliotecas</string>
+    <string name="title_books_add">Añadir</string>
+    <string name="title_books_edit">Editar</string>
+    <string name="title_books_remove">Eliminar</string>
+    <string name="toast_add_books">Libro agregado exitosamente</string>
+    <string name="toast_edit_books">Libro correctamente editado</string>
+    <string name="toast_remove_books">Libro eliminado correctamente</string>
+    <string name="toast_error_photo">Antes de agregar un libro debes seleccionar una foto</string>
+    <string name="toast_error_field_books">Este campo es obligatorio</string>
+    <string name="toast_error_fields_books">Hay campos que son obligatorios</string>
+    <string name="title_alert_dialog_edit_books">Editar libro</string>
+    <string name="message_alert_dialog_edit_books">¿Estás seguro de que quieres guardar los cambios?</string>
+    <string name="title_alert_dialog_remove_books">Eliminar libro</string>
+    <string name="message_alert_dialog_remove_books">¿Estás seguro de que quieres eliminar el libro?</string>
+
+    /* ------------------------------------------------ TITLES MAPS LIBRARIES ------------------------------------------------ */
+
+    <string name="snippet_maps_libraries">Más info.</string>
+
+    /* ------------------------------------------------ TITLES SETTINGS ------------------------------------------------ */
+
+    <string name="title_change_photo">Cambiar foto</string>
+    <string name="title_change_name">Cambiar nombre de usuario</string>
+    <string name="title_change_email">Cambiar correo</string>
+    <string name="title_change_password">Cambiar contraseña</string>
+    <string name="title_delete_user">Eliminar usuario</string>
+    <string name="title_alert_dialog_delete_user">¿Quieres borrar tu cuenta?</string>
+    <string name="message_alert_dialog_delete_user">Complete el siguiente formulario para eliminar su cuenta.</string>
+    <string name="title_alert_dialog_change_password">¿Quieres cambiar tu contraseña?</string>
+    <string name="message_alert_dialog_change_password">Complete el siguiente formulario para cambiar su contraseña.</string>
+    <string name="hint_alert_dialog_current_password">Contraseña actual</string>
+    <string name="hint_alert_dialog_new_password">Nueva contraseña</string>
+    <string name="title_alert_dialog_change_username">¿Quieres cambiar tu nombre de usuario?</string>
+    <string name="message_alert_dialog_change_username">Complete el siguiente formulario para cambiar su nombre de usuario.</string>
+    <string name="hint_alert_dialog_new_username">Nuevo nombre de usuario</string>
+    <string name="toast_change_username">El nombre de usuario se cambió correctamente</string>
+    <string name="toast_add_reserves">Libro agregado a sus reservas</string>
+    <string name="toast_delete_user">Usuario eliminado correctamente</string>
+    <string name="title_alert_dialog_change_email">¿Quieres cambiar tu correo electrónico?</string>
+    <string name="message_alert_dialog_change_email">Complete el siguiente formulario para cambiar su correo electrónico.</string>
+    <string name="toast_change_email">Correo electrónico cambiado correctamente</string>
+    <string name="toast_change_image">Imagen cambiada con éxito</string>
+    <string name="hint_alert_dialog_new_email">Nuevo correo</string>
+    <string name="toast_change_password">Contraseña cambiada con éxito</string>
+    <string name="hint_alert_dialog_forgot_password">Correo</string>
+    <string name="title_alert_dialog_forgot_password">Olvidaste tu contraseña</string>
+    <string name="message_alert_dialog_forgot_password">Complete el siguiente formulario para cambiar su contraseña.</string>
+    <string name="error_field_settings">Este campo es obligatorio</string>
+
+    /* ------------------------------------------------ OTHERS ------------------------------------------------ */
+
+    <string name="text_loged_reserves">Antes de iniciar sesión</string>
+    <string name="text_reserves_none">There is no reserved book</string>
+    <string name="title_button_info">No hay libros reservados</string>
+
+</resources>
